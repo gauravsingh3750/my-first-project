@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      background: #f4f4f4;
+    }
+
+    /* Sidebar */
+    .sidebar
+ {
+      width: 220px;
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 15px 0;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    .sidebar a:hover {
+      background: #34495e;
+    }
+
+    /* Main content */
+    .main-content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .header {
+      background: #fff;
+      padding: 15px 20px;
+      border-bottom: 1px solid #ddd;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .content {
+      margin-top: 20px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .card {
+      background: #3498db;
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2><i><u>Admin</i></u></h2>
+    <a href="vuser">Users</a>
+    <a href="venq">Enquiry</a>
+    <a href="addprod">Add Product</a>
+    <a href="vprod">View Product</a>
+    <a href="vorders">View Orders</a>
+    <a href="setting">Settings</a>
+    <a href="alogout">Logout</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="header">
+    <i><u>  Welcome <%= aname %> </u></i>
+    </div>
+
+    <div class="content">
+      <div class="card">
+        <h3>Total Users</h3>
+        <p>3</p>
+      </div>
+      <div class="card" style="background: #27ae60;">
+        <h3>Active Sessions</h3>
+        <p>1</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
